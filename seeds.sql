@@ -2,7 +2,7 @@
 
 USE bamazon;
 
-INSERT INTO products ( product_name,department_name, price, stock_quantity ) VALUES
+INSERT INTO products ( product_name, department_name, price, stock_quantity ) VALUES
 ("Apple - iPhone X - White", "Phones", 999.99, 100),
 ("Apple - iPhone X - Space Grey", "Phones", 999.99, 80),
 ("Apple - MacBook - Gold", "Laptops", 1299.99, 50),
