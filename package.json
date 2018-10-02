@@ -1,0 +1,30 @@
+{
+    "name": "bamazon",
+    "version": "1.0.0",
+    "description": "Amazon-like store front application. Made with node using MySQL.",
+    "main": "customer.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tablada/bamazon.git"
+    },
+    "keywords": [
+        "bamazon",
+        "node",
+        "mysql"
+    ],
+    "author": "Tablada",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tablada/bamazon/issues"
+    },
+    "homepage": "https://github.com/tablada/bamazon#readme",
+    "dependencies": {
+        "dotenv": "^6.0.0",
+        "inquirer": "^6.0.0",
+        "mysql": "^2.16.0",
+        "tablefy": "^1.0.3"
+    }
+}

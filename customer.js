@@ -2,7 +2,7 @@ require ('dotenv').config();
 var credentials = require('./credentials');
 var inquirer = require('inquirer');
 var mysql = require('mysql');
-const Tablefy = require('tableify');
+const Tablefy = require('tablefy');
 
 //MySQL Parameters from credential and .env
 var mysql_params = credentials.mysql_params;
@@ -83,7 +83,7 @@ function placeOrder() {
     inquirer.prompt([
         {
             type: 'input',
-            name: 'product_id',
+            name: 'item_id',
             message: 'Desired product (ID): ',
             validate: function(value) {
                 var pass = parseInt(value);
@@ -120,8 +120,8 @@ function mainMenu() {
     ]).then(function(answer){
         switch (answer.mainOption) {
             case 'Place an order':
-                placeOrder();
-                break;
+                placeOrder(pid, qty);
+            break;
             case 'Quit':
                 connection.end();
                 console.log('Thank you, please come again!');
